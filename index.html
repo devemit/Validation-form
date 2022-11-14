@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="tailwind/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Submit Form</title>
+  </head>
+  <body class="bg-white h-screen flex justify-center items-center">
+    <!-- Image Section -->
+    <div id="photo" class="lg:flex hidden">
+      <img
+        class="lg:w-[33.8rem] lg:h-[33.8rem] rounded-tl-3xl"
+        src="spratt.jpg"
+        alt="photo"
+      />
+    </div>
+
+    <!-- Form goes here -->
+    <div id="wrapper form" class="m-6 p-8">
+      <!-- Error id -->
+      <form id="form" action="/" method="GET" class="">
+        <div class="text-left">
+          <h1 class="text-4xl font-bold text-gray-700">Get Started</h1>
+          <p class="text-gray-500 text-lg">Already have an account?</p>
+          <button id="log-in" class="text-red-500 text-base py-1">
+            Log in
+          </button>
+          <div id="buttons sign-up" class="py-4">
+            <button
+              class="bg-blue-600 text-white lg:px-10 md:px-10 px-4 py-0.5 font-semibold rounded border border-slate-200 hover:border-slate-300"
+            >
+              <i class="fa-brands fa-facebook-f px-2"></i>
+              sign up
+            </button>
+            <button
+              class="bg-white lg:px-10 md:px-10 px-4 ml-8 font-semibold rounded border border-slate-100 hover:border-slate-200"
+            >
+              <i class="fa-brands fa-google px-2"></i>sign up
+            </button>
+          </div>
+        </div>
+        <div class="py-3">
+          <label for="name">Name</label>
+
+          <input
+            class="border-2 w-full px-1.5 py-1"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Smith"
+          />
+          <!-- <div id="error"></div> -->
+
+          <p id="error-name" class="text-red-600 py-0.5"></p>
+        </div>
+        <div class="py-3">
+          <label for="email">Email</label>
+          <input
+            class="border-2 w-full px-1.5 py-1"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@example.com"
+          />
+          <p id="error-email" class="text-red-600 py-0.5"></p>
+        </div>
+        <div class="py-3">
+          <label for="password">Password</label>
+          <input
+            class="border-2 w-full px-1.5 py-1"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="*******"
+          />
+          <p id="error-password" class="text-red-600 py-0.5"></p>
+        </div>
+        <div class="py-4">
+          <button
+            id="submit"
+            class="text-center px-24 py-0.5 rounded bg-red-300 w-full text-slate-100 font-semibold border border-slate-100 hover:border-slate-200"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
